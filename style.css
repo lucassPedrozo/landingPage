@@ -6,10 +6,12 @@
 }
 
 :root{
-    --white:  #FFF;
-    --orange: #FF9900;
-    --grey:   #262626;
-    --black:  #000000;
+    --white:        #FFF;
+    --orange:       #FF9900;
+    --grey:         #262626;
+    --light-grey:   #4a4a4a;
+    --dark-grey:    #050505;
+    --black:        #000000;
     --font: 'Fira Code';
 }
 
@@ -42,86 +44,71 @@ nav{
     width: 100%;
 }
 
-main{
-    padding-top: 30px;
-    padding-left: 30px;
+main, footer{
+    padding: 30px;
 }
 
 section{
-    font-size: 30px;
+    font-size: 25px;
     color: var(--orange);
     padding-top: 120px;
 }
 
-.blur-background{
-    padding-left: 300px;
-    height: 200px !important;
-    position: absolute;
-    z-index: 1;
-    filter: blur(100px);
+h1{
+    font-size: 55px;
+    color: var(--orange);
 }
 
 .nav-title{
-    position: relative;
     font-size: 20px;
     margin-right: 60px;
     color: var(--black);
     text-decoration: none;
-    z-index: 2;
 }
 
 .nav-title:hover{
-    color: var(--grey);
-    transition: .4s;
-    text-decoration: underline;
+    color: var(--light-grey);
+    transition: .04s;
 }
 
 .title-name{
-    position: relative;
-    font-size: 55px;
-    color: var(--orange);
     border-right: 4px solid;
     width: 13ch;
     white-space: nowrap;
     overflow: hidden;
     animation: typing 2s steps(13),
     blinking 0.5s infinite step-end alternate;
-    z-index: 2;
 }
 
-.title{
-    position: relative;
-    font-size: 55px;
-    color: var(--orange);
-    z-index: 2;
-}
-
-.fist-section{
-    position: relative;
-    padding-top: 10%;
-    z-index: 2;
-}
-
-.text-about{
-    position: relative;;
+.text-about, .text-projects{
     font-size: 14px;
     color: var(--orange);
-    z-index: 2;
-}
-
-.text-rigth{
-    position: relative;
-    padding-left: 87%;
-    z-index: 2;
 }
 
 .icons{
-    position: relative;;
     justify-content: space-between;
     align-items: center;
     color: var(--black);
     text-decoration: none;
-    z-index: 2;
+}
+.icons:hover{
+    color: var(--dark-grey);
+    transition: .04s;
+}
+
+/*.text-rigth{
+    padding
+}*/
+
+/*
+ Background elements
+
+ .blur-background{
+    padding-left: 300px;
+    height: 200px !important;
+    position: absolute;
+    z-index: 1;
+    filter: blur(100px);
 }
 
 .object-1{
@@ -157,6 +144,9 @@ section{
     border-radius: 537.655px;
     background: #89155B;
 }
+*/
+
+/* Animations */
 
 @keyframes typing{
     from {
