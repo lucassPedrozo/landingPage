@@ -73,10 +73,10 @@ h1{
 
 .title-name{
     border-right: 4px solid;
-    width: 14ch;
+    width: 13ch;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(14),
+    animation: typing 2s steps(13),
     blinking 0.5s infinite step-end alternate;
 }
 
