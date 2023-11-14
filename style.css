@@ -16,14 +16,14 @@
 }
 
 body{
-    background-color: var(--grey);
+    position: relative;
     height: 100%;
     width: 100%;
     font-family: var(--font);
 }
 
 header{
-    position: relative;
+    position: fixed;
     z-index: 2;
     display: flex;
     justify-content: center;
@@ -34,7 +34,6 @@ header{
     background: linear-gradient(270deg, #F29100 0%, #F90 49.79%, #F29100 100%), radial-gradient(235.44% 203.86% at -2.85% 183.11%, rgba(255, 122, 0, 0.40) 0%, rgba(98, 47, 0, 0.21) 37.74%, rgba(0, 0, 0, 0.09) 77.08%, rgba(50, 56, 63, 0.00) 100%);
     box-shadow: 2px 16px 19px 0px rgba(0, 0, 0, 0.09);
     backdrop-filter: blur(40px);
-
 }
 
 nav{
@@ -55,8 +54,23 @@ section{
 }
 
 h1{
-    font-size: 55px;
+    padding-left: 60px;
+    font-size: 60px;
     color: var(--orange);
+}
+
+.container{
+    width: 78%;
+    height: 200px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 16px 19px 0px rgba(0, 0, 0, 0.09);
+    backdrop-filter: blur(40px);
+    z-index: -1;
+}
+
+.title-dev{
+    padding-top: 150px;
 }
 
 .nav-title{
@@ -71,18 +85,17 @@ h1{
     transition: .04s;
 }
 
-.title-name{
+.title-name {
     border-right: 4px solid;
-    width: 13ch;
+    width: 14ch;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(13),
-    blinking 0.5s infinite step-end alternate;
 }
 
 .text-about, .text-projects{
     font-size: 14px;
     color: var(--orange);
+    z-index: 1;
 }
 
 .icons{
@@ -91,60 +104,27 @@ h1{
     color: var(--black);
     text-decoration: none;
 }
+
 .icons:hover{
     color: var(--dark-grey);
     transition: .04s;
 }
 
-/*.text-rigth{
-    padding
-}*/
-
-/*
- Background elements
-
- .blur-background{
-    padding-left: 300px;
-    height: 200px !important;
-    position: absolute;
-    z-index: 1;
-    filter: blur(100px);
+.icons-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
 }
 
-.object-1{
-    width: 537.655px;
-    height: 494.616px;
-    flex-shrink: 0;
-    border-radius: 537.655px;
-    background: #00FF47;
+.svg-background {
+    position: fixed;
+    z-index: -1;
+  }
+
+.text-rigth{
+    text-align: right;
 }
-.object-2{
-    width: 554.162px;
-    height: 473.204px;
-    flex-shrink: 0;
-    background: #9E2626;
-}
-.object-3{
-    width: 274.723px;
-    height: 452.863px;
-    flex-shrink: 0;
-    background: #31636F;
-}
-.object-4{
-    width: 237.655px;
-    height: 194.616px;
-    flex-shrink: 0;
-    border-radius: 537.655px;
-    background: #D9D9D9;
-}
-.object-5{
-    width: 637.655px;
-    height: 294.616px;
-    flex-shrink: 0;
-    border-radius: 537.655px;
-    background: #89155B;
-}
-*/
 
 /* Animations */
 
